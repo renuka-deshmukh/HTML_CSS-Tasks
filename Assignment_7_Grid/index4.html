@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 4 - Dashboard Layout</title>
+  <style>
+    .dashboard {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: auto 1fr auto;
+      gap: 10px;
+      height: 100vh;
+    }
+    header { grid-area: header; background: #333; color: white; padding: 10px; }
+    nav { grid-area: nav; background: #ddd; padding: 10px; }
+    main { grid-area: main; background: #f4f4f4; padding: 10px; }
+    aside { grid-area: aside; background: #ddd; padding: 10px; }
+    footer { grid-area: footer; background: #333; color: white; text-align: center; padding: 10px; }
+  </style>
+</head>
+<body>
+  <h2>Assignment 4: Dashboard Layout</h2>
+  <div class="dashboard">
+    <header>Dashboard Header</header>
+    <nav>Navigation</nav>
+    <main>Main Content</main>
+    <aside>Aside / Widgets</aside>
+    <footer>Dashboard Footer</footer>
+  </div>
+</body>
+</html>
