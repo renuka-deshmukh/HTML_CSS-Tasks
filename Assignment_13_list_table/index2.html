@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Tables</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+
+        /* First Table */
+        .table1 {
+            background-color: green;
+            color: black;
+            font-weight: bold;
+        }
+        .table1  th,
+        td tr {
+            border: 2px solid orange;
+            padding: 10px 15px;
+        }
+
+        .table1 caption {
+            background-color: orange;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            color: black;
+        }
+
+        .table1 th {
+            background-color: red;
+            color: white;
+        
+        }
+
+        /* Second Table */
+        .table2 th {
+            background-color: skyblue;
+            color: black;
+            font-weight: bold;
+        }
+        .table2 th,
+        td {
+            border: 2px solid black;
+            padding: 10px 15px;
+        }
+
+        .table2 td {
+            background-color: white;
+        }
+
+        .nested th {
+            background-color: gold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- First Table -->
+    <table class="table1">
+        <caption>Make HTML Table</caption>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>James</td>
+            <td>Jeo</td>
+            <td>CEO</td>
+            <td>$1300</td>
+        </tr>
+        <tr>
+            <td>Kate</td>
+            <td>Harns</td>
+            <td>Designer</td>
+            <td>$1000</td>
+        </tr>
+        <tr>
+            <td>Bryan</td>
+            <td>Brian</td>
+            <td>Team Leader</td>
+            <td>$700</td>
+        </tr>
+        <tr>
+            <td>Lesely</td>
+            <td>Prcnic</td>
+            <td>Author</td>
+            <td>$500</td>
+        </tr>
+    </table>
+
+    <!-- Second Table -->
+    <table class="table2">
+        <tr>
+            <th>Device</th>
+            <th>Brand</th>
+            <th colspan="2">Specifications</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Smartphone</td>
+            <td rowspan="2">Apple</td>
+            <td>iPhone 12 Pro</td>
+            <td>256GB</td>
+        </tr>
+        <tr>
+            <td>iPhone SE</td>
+            <td>128GB</td>
+        </tr>
+        <tr>
+            <td>Laptop</td>
+            <td>HP</td>
+            <td colspan="2">15.6" Display</td>
+        </tr>
+        <tr>
+            <td>Tablet</td>
+            <td>Samsung</td>
+            <td colspan="2">10.5" Display</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
